@@ -1,0 +1,19 @@
+.header {
+    .navbar {
+        margin: 0;
+        padding: 0 20px;
+        &-collapse--custom {
+            .nav-item.active {
+                color: getColor('orange');
+            }
+            .nav-link {
+                @include Text($fs-5, getColor('colorDark'), $fw-3, 0);
+                padding: spacing(0) spacing(1.5);
+                transition: all 0.5s;
+                &:hover {
+                    color: getColor('orange');
+                }
+            }
+        }
+    }
+}

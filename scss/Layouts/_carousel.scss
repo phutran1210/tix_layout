@@ -1,0 +1,72 @@
+.homeTool {
+    @include Mediaquery($md) {
+        display: none;
+    }
+    display: flex;
+    width: 70%;
+    height: spacing(8);
+    font-size: getFont('fs-5');
+    color: coLor('colorDark');
+    background-color: getColor('white');
+    // color: getColor('orange');
+    @include Boder-radius(10px);
+    // box-shadow: 5px 1px 1px 1px getColor('colorLight');
+    position: absolute;
+    bottom: spacing(-4);
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 spacing(1) getColor('buttonDark');
+    a {
+        color: #333;
+        @include Deconration;
+    }
+    &__item1 {
+        width: 25%;
+    }
+    &__detail {
+        width: 100%;
+        height: 80px;
+        // line-height: 80px;
+        .dropdown {
+            &__Phim {
+                margin-top: 18px;
+                height: 40px;
+                @include Dislay-Flex;
+                padding: 0 20px;
+                border-right: 1px solid $colorLight;
+                p {
+                    margin-top: 13px;
+                }
+                i {
+                    margin-bottom: 13px;
+                }
+            }
+        }
+        .dropdown-menu {
+            a {
+                font-size: 14px !important;
+            }
+        }
+    }
+    &__item {
+        width: 20%;
+        // border: 1px solid #fff;
+        height: spacing(8);
+        @include Dislay-Flex;
+    }
+    &__detail1 {
+        @extend .homeTool__detail;
+        .scrollbar1 {
+            width: 100%;
+            padding: 5px 15px;
+        }
+        .scrollbar2 {
+            @extend .scrollbar1;
+            width: 140%;
+        }
+        .scrollbar3 {
+            @extend .scrollbar1;
+            width: 165%;
+        }
+    }
+}

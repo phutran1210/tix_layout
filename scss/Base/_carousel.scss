@@ -1,0 +1,59 @@
+.carousel {
+  width: 1583px;
+  @include Mediaquery($md) {
+    min-height: 450px;
+  }
+  min-height: 640px;
+  .carousel--custom {
+    position: absolute;
+    top: 72px;
+    left: 0;
+  }
+  &-indicators--custom {
+    margin-bottom: 12%;
+    @include Mediaquery($md) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    li {
+      width: 14px;
+      height: 14px;
+      background-color: getColor("white");
+      border-radius: 50%;
+      &.active {
+        background-color: getColor("orange");
+      }
+    }
+  }
+  .homeTool {
+    z-index: 20;
+    .selectScroll {
+      border: 1px solid #333;
+      border-radius: 5px;
+      max-height: 300px;
+      overflow-y: scroll;
+      position: absolute !important;
+      top: -10px !important;
+      min-width: 140%;
+      ul {
+        li {
+          min-width: 40px;
+          font-size: 14px;
+          padding: 5px 10px;
+        }
+      }
+    }
+    #style-1::-webkit-scrollbar {
+      width: 6px;
+      background-color: #f5f5f5;
+    }
+    #style-1::-webkit-scrollbar-thumb {
+      background-color: getColor("colorLight");
+    }
+    .dropdown-toggle {
+      // width: 17% !important;
+      padding: 0 !important;
+    }
+  }
+}

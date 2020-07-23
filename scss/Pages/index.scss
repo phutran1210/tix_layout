@@ -1,0 +1,21 @@
+// Import Biến 
+@import "../Helper/variable";
+// Những Hàm trong mixin và Funcion đã viết sẵn
+@import "../Helper/mixin";
+@import "../Helper/function";
+// Custom tính năng của các library
+@import "../Base/reset";
+@import "../Base/navbar";
+@import "../Base/carousel";
+@import "../Base/film-block-carousel";
+@import '../Base/slick-carousel';
+@import '../Base/modal';
+@import '../Base/owl-carousel';
+// Layout header
+@import "../Layouts/header";
+@import '../Layouts/carousel';
+@import'../Layouts/Film-Block';
+@import '../Layouts/Address-Movie';
+@import '../Layouts/introduction';
+@import '../Layouts/backapp';
+@import '../Layouts/Footer';

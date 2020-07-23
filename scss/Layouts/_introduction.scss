@@ -1,0 +1,99 @@
+    .introduction {
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+        .block-img {
+            background-image: url('../.././img/homeCinemaComplex.png');
+            height: 120px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        //Custom nav-tab
+        .nav-tabs--custom1 {
+            border-bottom: none !important;
+            border: none !important;
+            width: 60%;
+            margin: auto;
+            .nav-item {
+                .nav-link {
+                    border: none;
+                    transition: all 0.1s;
+                    @include Text($fs-3,
+                    $colorDark,
+                    $fw-2,
+                    0);
+                    &:hover {
+                        @include Text($fs-2-1,
+                        $colorDark,
+                        $fw-2,
+                        0);
+                    }
+                    &.active {
+                        @include Text($fs-2-1,
+                        $orange,
+                        $fw-2,
+                        0);
+                    }
+                    &:focus {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+        &__dienanh {
+            img {
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .icon {
+                display: block;
+                p {
+                    color: $colorLight;
+                }
+            }
+            h3 {
+                min-height: 40px;
+                @include Text($fs-5,
+                $colorDark,
+                $fw-2,
+                0);
+                &:hover {
+                    a {
+                        color: $orange;
+                    }
+                }
+            }
+            p {
+                @include Text($fs-6-1,
+                $colorLight,
+                $fw-4,
+                0);
+            }
+            .dienanh_ul {
+                li {
+                    list-style: none;
+                    img {
+                        width: 40px;
+                    }
+                    display: flex;
+                    p {
+                        @include Text($fs-5,
+                        $colorDark,
+                        $fw-4,
+                        0);
+                    }
+                }
+            }
+            .btnButtonSeemore {
+                margin: 20px auto !important;
+                button {
+                    border: 1px solid $colorLight;
+                    &:hover {
+                        background-color: $orange;
+                        border: 1px solid $orange;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }

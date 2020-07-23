@@ -1,0 +1,52 @@
+        .film-block {
+            .your-class {
+                .row {
+                    display: flex !important;
+                }
+                // .slick-prev {
+                //     color: red;
+                //     background-color: red;
+                // }
+                // .slick-next {
+                //     color: red;
+                //     background-color: red;
+                // }
+            }
+            .film__btnBook {
+                .btn {
+                    color: #fff;
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+            .your-class {
+                .slick-slide {
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .slick-next {
+                    background-image: url('../.././img/next.png');
+                    color: green;
+                    height: 100px;
+                    width: 100px;
+                    background-repeat: no-repeat;
+                }
+                .slick-prev {
+                    position: absolute;
+                    left: 20px;
+                    background-image: url('../.././img/prev.png');
+                    // color: green;
+                    // background-color: green;
+                    height: 100px;
+                    width: 100px;
+                    background-repeat: no-repeat;
+                }
+            }
+            .slick-initialized {
+                width: 1140px !important;
+                margin: auto;
+            }
+        }

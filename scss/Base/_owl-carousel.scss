@@ -1,0 +1,48 @@
+.film-block {
+    .owl-nav {
+        button {
+            &:focus {
+                outline: none;
+                border: none;
+            }
+        }
+        .owl-prev {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-40%);
+            left: -80px;
+            &:hover {
+                background-color: #fff;
+            }
+            span {
+                @include Text(80px, $colorLight, $fw-2, 0);
+                &:focus {
+                    outline: none;
+                    border: none;
+                }
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+        }
+        .owl-next {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-40%);
+            right: -80px;
+            &:hover {
+                background-color: #fff;
+            }
+            span {
+                @include Text(80px, $colorLight, $fw-2, 0);
+                &:focus {
+                    outline: none;
+                    border: none;
+                }
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

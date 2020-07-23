@@ -1,0 +1,106 @@
+.checkout {
+    .checkoutLeft {
+        &__title {
+            position: fixed;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+            display: flex;
+            width: 910px;
+            justify-content: space-around;
+            align-items: center;
+            &__item {
+                @include Text($fs-5, $colorDark, $fw-2, 0);
+                ul {
+                    margin-bottom: 0px !important;
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        padding: 30px 20px;
+                        span {
+                            font-size: $fs-3-1;
+                            padding-right: 4px;
+                        }
+                        &.active {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+            &__login {
+                margin-right: -70px;
+                img {
+                    width: 30px;
+                    border-radius: 50%;
+                }
+                span {
+                    @include Text($fs-5, $colorLight, $fw-3, 0)
+                }
+            }
+        }
+    }
+    .checkout-body {
+        width: 100%;
+        margin-top: 90px;
+        .contentLeft__item {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            &__img {
+                background-image: url('../../../img/phi-vu-bao-to-force-of-nature-c18-15929695543645.png');
+                height: 320px;
+                width: 350px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: fixed;
+                left: -22%;
+            }
+        }
+        .contentRight {
+            padding-left: 60px;
+            width: 90%;
+            margin: auto;
+            &__top {
+                .logocinema {
+                    img {
+                        width: 50px;
+                    }
+                }
+                .contencinema {
+                    p {
+                        @include Text($fs-5,
+                        $colorLight,
+                        $fw-3,
+                        0);
+                        span {
+                            color: $colorFooter;
+                        }
+                        margin: 0 !important;
+                    }
+                }
+                .time {
+                    text-align: end;
+                    p:nth-child(1) {
+                        @include Text($fs-6,
+                        $colorLight,
+                        $fw-4,
+                        0)
+                    }
+                    p:nth-child(2) {
+                        @include Text($fs-3,
+                        $orange,
+                        $fw-4,
+                        0)
+                    }
+                }
+                .rowseat {
+                    p {
+                        span::before {
+                            content: '\e909';
+                            color: grey;
+                            background-color: green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

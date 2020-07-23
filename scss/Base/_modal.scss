@@ -1,0 +1,18 @@
+.modal-dialog {
+    min-width: 120px;
+    button {
+        position: absolute;
+        top: 0;
+        right: -18%;
+        width: 40px;
+        height: 40px;
+        border: 2px solid white;
+        border-radius: 50%;
+        color: white;
+        z-index: 3;
+    }
+    .modal-content {
+        border: none;
+        background-color: transparent !important;
+    }
+}

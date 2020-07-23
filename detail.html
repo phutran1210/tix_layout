@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Detail</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+      rel="shortcut icon"
+      type="image/gif"
+      href="https://s3img.vcdn.vn/123phim/2018/09/459970ce80ca2c762c8c8076b415c06e.png"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar--custom navbar-expand-md">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-collapse--custom" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Lịch Chiếu <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cụm rạp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tin Tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ứng Dụng</a>
+                    </li>
+                </ul>
+                <div class="header__profile">
+                    <div class="header__left">
+                        <img src="./img/avatar.png" alt="" />
+                        <span>Login</span>
+                        <div class="logOut">
+                            <a href="#">Đăng Xuất</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span>Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="detail-content">
+        <div class="detail_overlay ">
+            <div class="styleBlur">
+                <div class="styleBlur__img">
+                    <img src="./img/soi-100-100-wolf-p-15927180593840.png" class="w-100 d-block " alt="">
+                </div>
+                <div class="styleBlur__overlay"></div>
+                <div class="detail-content__main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="film-detail__item">
+                                    <img src="./img/soi-100-100-wolf.png" alt="w-100 d-block">
+                                    <div class="icon" data-toggle="modal" data-target="#Sky-Tour-Movie">
+                                        <img src="./img/play-video.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5 infoMain">
+                                <div class="infoMain__detail">
+                                    <p>14.02.2020</p>
+                                    <p><span>C16</span> Sắc Đẹp Dối Trá - The Drama Queen</p>
+                                    <p>91 phút - 0 IMDb - 2D/Digital</p>
+                                    <button class="btn-muave">MUA VÉ</button>
+                                </div>
+
+                            </div>
+                            <div class="col-4 circle--custom">
+                                <div class="box">
+                                    <div class="percent">
+                                        <svg>
+                                            <circle cx="40" cy="40" r="40"></circle>
+                                            <circle cx="40" cy="40" r="40"></circle>
+                                        </svg>
+                                        <div class="number">
+                                            <h2>7.6</h2>
+                                        </div>
+
+                                    </div>
+                                    <div class="start">
+                                        <img src="./img/star1.png" alt="">
+                                        <img src="./img/star1.png" alt="">
+                                        <img src="./img/star1.png" alt="">
+                                        <img src="./img/star1.2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentMain">
+                    <div class="contentMain__item">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#thongtin" role="tab" aria-controls="home" aria-selected="true">Thông Tin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#danhgia" role="tab" aria-controls="profile" aria-selected="false">Đánh Giá</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="thongtin" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="row rowLeftInfo">
+                                                <p class="contentTitle pl-5">Ngày Công Chiếu</p>
+                                                <p class="contentInfo ">26.06.2020</p>
+                                            </div>
+                                            <div class="row rowLeftInfo">
+                                                <p class="contentTitle pl-5">Đạo diễn</p>
+                                                <p class="contentInfo "> Alexs Stadermann </p>
+                                            </div>
+                                            <div class="row rowLeftInfo">
+                                                <p class="contentTitle pl-5">Diễn viên</p>
+                                                <p class="contentInfo ">Hương Giang, Puka</p>
+                                            </div>
+                                            <div class="row rowLeftInfo">
+                                                <p class="contentTitle pl-5">Thể Loại</p>
+                                                <p class="contentInfo ">Hoạt hình, Gia đình</p>
+                                            </div>
+                                            <div class="row rowLeftInfo">
+                                                <p class="contentTitle pl-5">Định dạng</p>
+                                                <p class="contentInfo ">2D/Digital</p>
+                                            </div>
+                                            <div class="row rowLeftInfo">
+                                                <p class="contentTitle pl-5">Quốc Gia SX</p>
+                                                <p class="contentInfo ">Mỹ</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="rowRightInfo">
+                                                <p>Nội dung</p>
+                                                <p>Phim là câu chuyện kể về Freddy Lupin - người thừa kế một gia đình sói quý tộc. Vào sinh nhật lần thứ 13 của mình, Freddy phải thực hiện nghi lễ trưởng thành và biến hình thành sói trước sự chứng kiến của các thành viên trong gia tộc. Thế nhưng, cậu lại biến thành một chú chó lông xù (Poodle). Trong lúc tuyệt vọng và nghĩ rằng cuộc đời đã chấm hết, Freddy bắt đầu một cuộc phiêu lưu mới đầy thú vị và vui nhộn. Và rồi Freddy dần khám phá ra sự thật về cái chết bí ẩn của cha mình, phát hiện ra một thợ săn người sói đang lên kế hoạch tiêu diệt tất cả gia đình và bạn bè cậu. Với vẻ ngoài nhỏ bé của một chú cún, liệu Freddy có ngăn chặn được âm mưu độc ác và chứng minh mình là sói 100%?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="danhgia" role="tabpanel" aria-labelledby="profile-tab">...
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="footer__detail1 pb-5">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="footer__top-item">
+                            <h4>TIX</h4>
+                            <p class="footer__item-title mb-0">
+                                <a href="#">FAQ</a>
+                            </p>
+                            <p class="footer__item-title mb-0"><a href="#">Brand Guidelines</a></p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="footer__top-item">
+                            <h4> &nbsp;</h4>
+
+                            <p class="footer__item-title mb-0">
+                                <a href="#">Thỏa thuận sử dụng</a>
+                            </p>
+                            <p class="footer__item-title mb-0"><a href="#">Chính sách bảo mật</a></p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer__top-item">
+                            <h4> ĐỐI TÁC</h4>
+                            <div class="row">
+                                <div class="col-12 pl-0">
+                                    <a href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/galaxy.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/lotte.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row  mt-3">
+                                <div class="col-12 pl-0">
+                                    <a href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/galaxy.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/lotte.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row  mt-3">
+                                <div class="col-12 pl-0">
+                                    <a href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/galaxy.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/lotte.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 pl-0">
+                                    <a href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/galaxy.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/bhd.png" alt=""></a>
+                                    <a class="ml-3" href=""> <img src="./img/lotte.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 footer__top-item">
+                        <h4>Mobile App</h4>
+                        <p class="footer__item-title mb-0">
+                            <a href="#">
+                                <i class="fab fa-apple mr-2"></i>
+                                <i class="fab fa-android"></i>
+                            </a>
+                        </p>
+
+                    </div>
+                    <div class="col-2 footer__top-item">
+                        <h4>Mobile App</h4>
+                        <p class="footer__item-title mb-0">
+                            <a href="#">
+                                <i class="fab fa-apple mr-2"></i>
+                                <i class="fab fa-android"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__detail2">
+                    <div class="row mt-5">
+                        <div class="col-1">
+                            <img src="./img/zion-logo.jpg" alt="">
+                        </div>
+                        <div class="col-9">
+                            <p>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</p>
+                            <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
+                            <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,</p>
+                            <p>đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.</p>
+                            <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+                            <p>Email: <span style="color:red;">support@tix.vn</span></p>
+
+                        </div>
+                        <div class="col-2">
+                            <div class="img-2">
+                                <img src="./img/d1e6bd560daa9e20131ea8a0f62e87f8.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

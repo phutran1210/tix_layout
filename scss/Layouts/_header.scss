@@ -1,0 +1,69 @@
+    .header {
+        .navbar--custom {
+            @include Mediaquery($md) {}
+        }
+        &:hover {
+            opacity: 1;
+        }
+        // border-bottom: 1px solid #000;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        // height: 100px;
+        background-color: getColor('white');
+        opacity: 0.9;
+        box-shadow: 0 5px 5px 1px $colorLight;
+        img {
+            width: 60px;
+        }
+        &__profile {
+            display: flex;
+            cursor: pointer;
+            img {
+                width: 30px;
+                border-radius: 50%;
+            }
+            span {
+                color: getColor('colorLight');
+                font-size: getFont('fs-6');
+                padding: spacing(1.5) spacing(1);
+                border-right: 1px solid getColor('colorLight');
+                position: relative;
+                // &::after {
+                //     content: '';
+                //     display: block;
+                //     width: spacing(10);
+                //     height: spacing(3);
+                //     background-color: getColor('colorLight');
+                // }
+            }
+            i {
+                color: getColor('colorLight');
+                font-size: getFont('fs-5');
+                margin-left: spacing(0.5);
+            }
+        }
+        &__left {
+            &:hover .logOut {
+                display: block;
+            }
+            position: relative;
+            .logOut {
+                content: '';
+                position: absolute;
+                opacity: 1;
+                display: none;
+                top: 110%;
+                left: 0;
+                width: spacing(15);
+                background-color: getColor('colorLight');
+                padding: spacing(0.3) 0;
+                text-align: center;
+                border-radius: spacing(0.4);
+                a {
+                    text-decoration: none;
+                    @include Text($fs-6, getColor('white'), $fw-4, 0);
+                }
+            }
+        }
+    }
